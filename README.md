@@ -16,4 +16,11 @@ Una volta eseguiti tutti i passaggi, aprire il browser alla pagina 127.0.0.1:808
 
 ## Modifica degli esercizi
 
-Per aggiungere o rimuovere altri esercizi è sufficiente modificare la lista degli esercizi presente nel file _app.js_ alla riga 25.
+Per aggiungere o rimuovere altri esercizi è sufficiente modificare la lista degli esercizi presente nel file _app.js_.
+
+
+## Aggiornamenti
+
+**Versione 1.1**
+ - Eliminati alcuni bug, tra cui una visualizzazione errata del numero totale di esercizi.
+ - Migliorata l'interfaccia utente.
