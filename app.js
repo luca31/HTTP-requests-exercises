@@ -5,6 +5,7 @@ const app = express()
 let bodyParser = require('body-parser');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use('/public',express.static('public'));
 app.set('view engine', 'ejs');
 
 
@@ -39,12 +40,24 @@ for(let x in es[1].dati){
 }
 
 
+let progress = {
+  signed:false,
+  es:{}
+}
+
+
 app.get('/', (req,res) => {
   res.render("index", {req:req, host: req.headers.host, numEs:es.length})
 })
 
 
+app.get('/voto', (req,res) => {
+  res.render("voto", {req:req, host: req.headers.host, progress:progress, numEs:es.length})
+})
+
+
 app.post('/accreditamento', (req,res) => {
+  if(req.body.nome) {progress.signed = req.body.nome}
   res.send({
     "message":req.body.nome?"Ottimo lavoro!":"Riprova"
   })
@@ -67,7 +80,14 @@ for(let x in es){
   })
 
   app.post(`/esercizi/${parseInt(x)+1}`, (req, res) => {
-    if(JSON.stringify(req.body.data) == JSON.stringify(es[x].risultato)){
+    if(!progress.signed) {
+      res.status(403)
+      res.send({
+        "message": "Devi prima eseguire l'accreditamento"
+      })
+    }
+    else if(JSON.stringify(req.body.data) == JSON.stringify(es[x].risultato)){
+      progress.es[x] = true
       res.send({
         "message": "Ottimo lavoro!"
       })
@@ -83,7 +103,7 @@ for(let x in es){
 app.all('*', (req, res) => {
   res.status(404)
   res.send({
-    "message":"Richiesta non corretta"
+    "message":"Richiesta non valida"
   })
 })
 
