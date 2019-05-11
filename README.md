@@ -27,7 +27,7 @@ Per aggiungere o rimuovere altri esercizi è sufficiente modificare la lista deg
  - Eliminati alcuni bug, tra cui una visualizzazione errata del numero totale di esercizi.
  - Migliorata l'interfaccia utente.
 
-#### Versione 1.2
+#### Versione 1.2b - urgente
  - Eliminati alcuni bug.
  - Migliorata l'interfaccia utente.
  - Aggiunta la possibilità di controllare i propri progressi in tempo reale.

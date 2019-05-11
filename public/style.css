@@ -1,0 +1,41 @@
+html, body,* {
+  margin:0;
+  padding:0;
+  border:0;
+  font-family:sans-serif;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+}
+header, div { 
+  display:block;
+  box-sizing:border-box;
+}
+header {
+  font-size:20px;
+  font-weight:bold;
+  width:100%;
+  padding:20px 40px;
+  background-color:black;
+  color:white;
+}
+main {
+  padding:40px;
+  font-size:20px;
+}
+main div {
+  width:100%;
+  margin-bottom:20px;
+}
+a, a.active {
+  color:#ff0000;
+  font-family:monospace;
+  text-decoration:unset;
+}
+i {
+  font-style:normal;
+  font-family:monospace;
+}
+a:before, a:after, i:before, i:after {
+  content:"\00a0 ";
+}
