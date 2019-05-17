@@ -3,10 +3,12 @@
   <head>
     <title>Voto</title>
     <link rel="stylesheet" type="text/css" href="public/style.css">
+    <script src="public/script.js"></script>
   </head>
 <body>
-  <header>IL TUO PUNTEGGIO: <%= progress.signed?2+Object.keys(progress.es).length:0 %> / <%= numEs+2 %></header>
-  <main>
+  <nav>Il tuo punteggio</nav>
+  <header>Stato esercizi (<%= progress.signed?2+Object.keys(progress.es).length:0 %>/<%= numEs+2 %>)</header>
+  <section>
     <div>
       <%= progress.signed?"Utente: "+progress.signed:"Accreditamento non eseguito" %>
     </div>
@@ -19,6 +21,6 @@
         Esercizio <%= parseInt(x)+1 %> corretto.
       </div>
     <% }} %>
-  </main>
+  </section>
 </body>
 </html>

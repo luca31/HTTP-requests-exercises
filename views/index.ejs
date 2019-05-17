@@ -3,22 +3,32 @@
   <head>
     <title>Richieste http</title>
     <link rel="stylesheet" type="text/css" href="public/style.css">
+    <script src="public/script.js"></script>
   </head>
 <body>
-  <header>RICHIESTE HTTP</header>
-  <main>
+  <nav>Richieste HTTP</nav>
+  <section>
     <div>
-      Richiesta in post a <a><%= host %>/accreditamento</a> inviando un json contenete nella chiave <i>nome</i> il tuo nome e cognome.
+      Richiesta in post a <a class="copy" onclick="copy(this)"><%= host %>/accreditamento</a> inviando un json contenete nella chiave nome il tuo nome e cognome.
     </div>
     <div>
-      Richiesta in get a <a><%= host %>/esercizi/n</a> (1 - <%= numEs %>) con headers <i>x-data = "True"</i> per ottenere <i>consegna</i> e <i>data</i>.
+      Richiesta in get a <a class="copy" onclick="copy(this)"><%= host %>/esercizi/n</a> (1 - <%= es.length %>) con headers x-data = "True" per ottenere consegna e data.
     </div>
     <div>
-      Richiesta in post a <a><%= host %>/esercizi/n</a> per inviare il risultato con la chiave <i>data</i>.
+      Richiesta in post a <a class="copy" onclick="copy(this)"><%= host %>/esercizi/n</a> per inviare il risultato con la chiave data.
     </div>
     <div>
-      Puoi controllare il tuo punteggio a <a><%= host %>/voto</a>.
+      Puoi controllare il tuo punteggio a <a class="copy" onclick="copy(this)"><%= host %>/voto</a>.
     </div>
-  </main>
+  </section>
+
+  <header>Consegne</header>
+  <section>
+    <% for(let x in es){ %>
+    <div>
+      Es <%= parseInt(x)+1 %> - <%= es[x].consegna %><br>
+    </div>
+    <% } %>
+  </section>
 </body>
 </html>

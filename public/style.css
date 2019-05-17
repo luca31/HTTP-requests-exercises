@@ -1,41 +1,65 @@
-html, body,* {
+@import url('https://fonts.googleapis.com/css?family=Lato:400');
+
+html, body, * {
   margin:0;
   padding:0;
   border:0;
-  font-family:sans-serif;
+  font-family:'Lato', sans-serif;
   outline:0;
   font-size:100%;
   vertical-align:baseline;
 }
-header, div { 
+nav, div, header { 
   display:block;
   box-sizing:border-box;
 }
-header {
-  font-size:20px;
-  font-weight:bold;
+nav {
+  font-size:25px;
   width:100%;
   padding:20px 40px;
   background-color:black;
   color:white;
+  margin-bottom:40px;
 }
-main {
-  padding:40px;
+header {
+  font-size:25px;
+  width:100%;
+  padding:0 40px 10px 40px;
+  border-bottom:1px solid black;
+}
+section {
+  margin:40px;
   font-size:20px;
 }
-main div {
+section div {
   width:100%;
   margin-bottom:20px;
 }
 a, a.active {
-  color:#ff0000;
-  font-family:monospace;
   text-decoration:unset;
+  color:#1976D2;
+  cursor:pointer;
 }
-i {
-  font-style:normal;
-  font-family:monospace;
+a:hover, a.active:hover {
+  text-decoration:underline;
 }
-a:before, a:after, i:before, i:after {
-  content:"\00a0 ";
+.copy{
+  user-select:none;
+}
+.copy:after{
+  display:inline-block;
+  content:' ';
+  background-image:url("/public/copy-icon.svg");
+  background-size:20px 20px;
+  height:20px;
+  width:20px;
+  margin-left: 10px;
+  margin-right: 5px;
+}
+.copy.done{
+  color:#009688;
+}
+.copy.done:after{
+  background-image:url("/public/done-icon.svg")!important;
+  border-radius:20px;
 }

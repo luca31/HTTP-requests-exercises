@@ -26,7 +26,7 @@ let es = [{
   dati: {testo: "ciao mare ", numero:5},
   risultato: "ciao mare ciao mare ciao mare ciao mare ciao mare "
 }, {
-  consegna: "Invia una lista con i primi 5 numeri divisibili per il numero dato e maggiori di 9999",
+  consegna: "Invia una lista con i primi 5 numeri divisibili per il numero dato e maggiori di 9999.",
   dati: 23,
   risultato: [1012, 1035, 1058, 1081, 1104]
 }]
@@ -47,12 +47,12 @@ let progress = {
 
 
 app.get('/', (req,res) => {
-  res.render("index", {req:req, host: req.headers.host, numEs:es.length})
+  res.render("index", {req:req, host: "http://"+req.headers.host, es:es})
 })
 
 
 app.get('/voto', (req,res) => {
-  res.render("voto", {req:req, host: req.headers.host, progress:progress, numEs:es.length})
+  res.render("voto", {req:req, host: "http://"+req.headers.host, progress:progress, numEs:es.length})
 })
 
 
