@@ -3,21 +3,21 @@
 ## Installazione e uso
 
 Per hostare la api che permette di eseguire gli esercizi occorre seguire i seguenti step:
- - Installare node.js da https://nodejs.org/en/ (versione lts)
+ - Installare [node.js](https://nodejs.org/en/) in versione LTS
  - Scaricare la [zip](https://github.com/luca31/esercizi-richieste-http/archive/master.zip)
- - Aprire la directory estratta dalla zip utilizzando il terminale (_cd /percorso/master_)
- - Scrivere il comando _node app.local.js_
+ - Aprire la directory estratta dalla zip utilizzando il terminale: `cd /percorso/master`
+ - Scrivere il comando `node app.local.js`
 
-Una volta eseguiti tutti i passaggi, aprire il browser alla pagina 127.0.0.1:8080 o localhost:8080 per le istruzioni.
+Una volta eseguiti tutti i passaggi, aprire il browser alla pagina 127.0.0.1:8080 o localhost:8080 per le istruzioni. È anche presente un file python di esempio contenente la soluzione del primo esercizio.
 
-Per bloccare il server sarà necessario premere la combinazione di tasti *control c* sulla pagina del terminale.
+Per bloccare il server sarà necessario premere la combinazione di tasti `CTRL/control + c` sulla pagina del terminale.
 
 **NB** Una volta attivato l'hosting sarà necessario aprire una nuova pagina del terminale nel caso in cui si volessero eseguire ulteriori comandi
 
 
 ## Modifica degli esercizi
 
-Per aggiungere o rimuovere altri esercizi è sufficiente modificare la lista degli esercizi presente nel file _app.js_. È inoltre possibile inserire il risultato successivamente, in modo da poterlo risolvere in javascript all'interno del medesimo file.
+Per aggiungere o rimuovere altri esercizi è sufficiente modificare la lista degli esercizi presente nel file `app.js`. È inoltre possibile inserire il risultato successivamente, in modo da poterlo risolvere in javascript all'interno del medesimo file.
 
 
 ## Aggiornamenti
@@ -36,3 +36,6 @@ Per aggiungere o rimuovere altri esercizi è sufficiente modificare la lista deg
  - Aggiunta una nuova funzione per copiare i link
  - Inserite le consegne degli esercizi nella pagina iniziale
  - Migliorate le istruzioni
+
+#### Versione 1.3.1
+ - Miglioramenti minori
