@@ -39,3 +39,9 @@ Per aggiungere o rimuovere altri esercizi è sufficiente modificare la lista deg
 
 #### Versione 1.3.1
  - Miglioramenti minori
+
+#### Versione 1.4
+ - Eliminati alcuni file non necessari
+ - Miglioramenti
+
+**NB** I commit potrebbero rivelarsi instabili e tutte le versioni sono da considerarsi ancora in stato di beta-testing.

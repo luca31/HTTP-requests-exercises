@@ -4,14 +4,11 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "aws-serverless-express": "^3.3.5",
-    "body-parser": "^1.18.3",
+    "body-parser": "^1.19.0",
     "ejs": "^2.6.1",
-    "express": "^4.16.4"
+    "express": "^4.17.0"
   },
-  "devDependencies": {
-    "claudia": "^5.2.0"
-  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

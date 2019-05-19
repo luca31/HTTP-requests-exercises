@@ -1,5 +1,5 @@
 import requests
-requests.post("http://localhost:8080/accreditamento", json={"nome":"Luca Colli"})
+requests.post("http://localhost:8080/accreditamento", json={"nome":"Il tuo nome"})
 
 ex = 1
 r = requests.get("http://localhost:8080/esercizi/{}".format(ex), headers={"x-data":"True"})
