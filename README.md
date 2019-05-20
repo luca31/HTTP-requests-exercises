@@ -1,51 +1,44 @@
-# Esercizi richieste http
+# HTTP requests exercises
 
-## Installazione e uso
+## Installation and use
 
-Per hostare la api che permette di eseguire gli esercizi occorre seguire i seguenti step:
- - Installare [node.js](https://nodejs.org/en/) in versione LTS
- - Scaricare la [zip](https://github.com/luca31/esercizi-richieste-http/archive/master.zip)
- - Aprire la directory estratta dalla zip utilizzando il terminale: `cd /percorso/master`
- - Scrivere il comando `node app.local.js`
+To host the api that allows you to perform the exercises you need to follow the following steps:
+  - Install [node.js](https://nodejs.org/en/) in LTS version
+  - Download the [zip](https://github.com/luca31/esercizi-richieste-http/archive/master.zip)
+  - Open the directory extracted from the zip using the terminal: `cd/path/master`
+  - Write the command `node app.js`
 
-Una volta eseguiti tutti i passaggi, aprire il browser alla pagina 127.0.0.1:8080 o localhost:8080 per le istruzioni. È anche presente un file python di esempio contenente la soluzione del primo esercizio.
+Once you have completed all the steps, open the browser on page 127.0.0.1:8080 or localhost: 8080 for instructions. There is also an example python file containing the solution of the first exercise. To lock the server, press the `CTRL / control` +` C` key combination on the terminal page.
 
-Per bloccare il server sarà necessario premere la combinazione di tasti `CTRL/control` + `C` sulla pagina del terminale.
-
-**NB** Una volta attivato l'hosting sarà necessario aprire una nuova pagina del terminale nel caso in cui si volessero eseguire ulteriori comandi
+Note that once the hosting has been activated it will be necessary to open a new terminal page in case you want to execute further commands.
 
 
-## Modifica degli esercizi e della lingua
+## Modifications of exercises and languages
 
-Per aggiungere o rimuovere altri esercizi è sufficiente modificare la lista degli esercizi presente nel file `ex.json`. Se si vuole contribuire al miglioramento delle traduzioni si può procedere alla modifica del file `languages.json`.
+To add or remove other exercises, simply modify the list of exercises in the `ex.json` file. If you want to contribute to the improvement of translations, you can proceed with the modification of the `languages.json` file.
 
 
-## Aggiornamenti
+## Updates - beta testing
 
-#### Versione 1.1
- - Eliminati alcuni bug, tra cui una visualizzazione errata del numero totale di esercizi.
- - Migliorata l'interfaccia utente.
+### V1.1
+ - Bugfix
+ - Better UI
 
-#### Versione 1.2b - urgente
- - Eliminati alcuni bug.
- - Migliorata l'interfaccia utente.
- - Aggiunta la possibilità di controllare i propri progressi in tempo reale.
+### V1.2b - very important
+ - Bugfix
+ - Better UI
+ - You can now check your progress in real time
 
-#### Versione 1.3
- - Grafica completamente rinnovata
- - Aggiunta una nuova funzione per copiare i link
- - Inserite le consegne degli esercizi nella pagina iniziale
- - Migliorate le istruzioni
+### V1.3
+ - Fully renovated UI
+ - You can now copy links
+ - Tasks are now listed directly in the home page
+ - Better instructions
 
-#### Versione 1.3.1
- - Miglioramenti minori
+### V1.4
+ - Deleted some useless file
+ - Bugfix
 
-#### Versione 1.4
- - Eliminati alcuni file non necessari
- - Miglioramenti
-
-#### Versione 1.5
- - Supporto a italiano e inglese
- - Miglioramenti del codice
-
-**NB** I commit potrebbero rivelarsi instabili e tutte le versioni sono da considerarsi ancora in stato di beta-testing.
+### V1.5
+ - Now English and Italian are both supported
+ - Better code
