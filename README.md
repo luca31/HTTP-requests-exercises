@@ -10,7 +10,7 @@ Per hostare la api che permette di eseguire gli esercizi occorre seguire i segue
 
 Una volta eseguiti tutti i passaggi, aprire il browser alla pagina 127.0.0.1:8080 o localhost:8080 per le istruzioni. È anche presente un file python di esempio contenente la soluzione del primo esercizio.
 
-Per bloccare il server sarà necessario premere la combinazione di tasti `CTRL/control` + `c` sulla pagina del terminale.
+Per bloccare il server sarà necessario premere la combinazione di tasti `CTRL/control` + `C` sulla pagina del terminale.
 
 **NB** Una volta attivato l'hosting sarà necessario aprire una nuova pagina del terminale nel caso in cui si volessero eseguire ulteriori comandi
 
