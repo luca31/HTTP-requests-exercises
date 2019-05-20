@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+  <head>
+    <title>HTTP requests</title>
+    <link rel="stylesheet" type="text/css" href="public/style.css">
+    <script src="public/script.js"></script>
+  </head>
+<body>
+  <nav>HTTP requests</nav>
+  <section>
+    <div>
+      Post requests to <a class="copy" onclick="copy(this)"><%= host %>/signup</a> sending a json containing your first and last name in the name key.
+    </div>
+    <div>
+      Get requests to <a class="copy" onclick="copy(this)"><%= host %>/ex/n</a> (1 - <%= ex.length %>) with headers x-data = "True" in order to obtain task (consegna) and data.
+    </div>
+    <div>
+      Post requests to <a class="copy" onclick="copy(this)"><%= host %>/ex/n</a> (1 - <%= ex.length %>) in order to send the result in the data key.
+    </div>
+    <div>
+      You can check your score at <a class="copy" onclick="copy(this)"><%= host %>/grade</a>.
+    </div>
+  </section>
+
+  <header>Tasks</header>
+  <section>
+    <% for(let x in ex){ %>
+    <div>
+      Ex <%= parseInt(x)+1 %> - <%= ex[x].task %><br>
+    </div>
+    <% } %>
+  </section>
+</body>
+</html>

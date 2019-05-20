@@ -1,0 +1,26 @@
+[{
+  "task_en": "Delete all numbers major than 30.",
+  "task_it": "Elimina i numeri maggiori di 30.",
+  "data": [56,45,74,57,45,65,6,76,5,45,7,6,15,7,57,46,45,2,7,75,46],
+  "result": [6,5,7,6,15,7,2,7]
+}, {
+  "task_en": "Sum all numbers to the last of the list (included).",
+  "task_it": "Somma tutti i numeri all'ultimo della lista (compreso).",
+  "data": [43,66,95,86,5,26,8,6,45,6,7,51,7,67,57,7,34,50,59],
+  "result": [102, 125, 154, 145, 64, 85, 67, 65, 104, 65, 66, 110, 66, 126, 116, 66, 93, 109, 118]
+}, {
+  "task_en": "Sort strings in alphabethic order and then replace the first letter with 5.",
+  "task_it": "Ordina le stringe in ordine alfabetico e dopo sostituisci la prima lettera con 5.",
+  "data": ["apple", "samsung", "google", "android", "mac"],
+  "result": ["5ndroid", "5pple", "5oogle", "5ac", "5amsung"]
+}, {
+  "task_en": "Repeat the string at *text* key how much mìhas indicated in the *n* key.",
+  "task_it": "Ripeti la stringa alla chiave *text* tante volte quanto è indicato alla chiave *n*.",
+  "data": {"text": "hello world ", "n":5},
+  "result": "hello world hello world hello world hello world hello world "
+}, {
+  "task_en": "Send a list containing the first 5 numbers divisible for the given number and major than 9999.",
+  "task_it": "Invia una lista con i primi 5 numeri divisibili per il numero dato e maggiori di 9999.",
+  "data": 23,
+  "result": [1012, 1035, 1058, 1081, 1104]
+}]

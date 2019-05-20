@@ -7,16 +7,16 @@
   </head>
 <body>
   <nav>Il tuo punteggio</nav>
-  <header>Stato esercizi (<%= progress.signed?2+Object.keys(progress.es).length:0 %>/<%= numEs+2 %>)</header>
+  <header>Stato esercizi (<%= progress.signed?2+Object.keys(progress.ex).length:0 %>/<%= ex.length+2 %>)</header>
   <section>
     <div>
-      <%= progress.signed?"Utente: "+progress.signed:"Accreditamento non eseguito" %>
+      <%= progress.signed?"Utente: "+progress.signed:"Non ancora registrato" %>
     </div>
-    <% if(Object.keys(progress.es).length == 0 && progress.signed){ %>
+    <% if(Object.keys(progress.ex).length == 0 && progress.signed){ %>
       <div>
         Non sono acora stati eseguiti esercizi.
       </div>
-    <% } else { for(let x in progress.es){ %>
+    <% } else { for(let x in progress.ex){ %>
       <div>
         Esercizio <%= parseInt(x)+1 %> corretto.
       </div>
