@@ -4,7 +4,7 @@
 
 To host the api that allows you to perform the exercises you need to follow the following steps:
  - Install [node.js](https://nodejs.org/en/) in LTS version
- - Download the [zip](https://github.com/luca31/esercizi-richieste-http/archive/master.zip)
+ - Download the [zip](https://github.com/luca31/HTTP-requests-exercises/zipball/master)
  - Open the directory extracted from the zip using the terminal: `cd/path/master`
  - Write the command `node app.js`
 
