@@ -6,7 +6,7 @@ To host the api that allows you to perform the exercises you need to follow the 
  - Install [node.js](https://nodejs.org/en/) in LTS version
  - Download the [zip](https://github.com/luca31/HTTP-requests-exercises/zipball/master)
  - Open the directory extracted from the zip using the terminal: `cd/path/master`
- - Write the command `node app.js`
+ - Write the command `npm start`
 
 Once you have completed all the steps, open the browser on page [http://127.0.0.1:8080](http://127.0.0.1:8080) or [http://localhost:8080](http://localhost:8080) for instructions. There is also an example python file containing the solution of the first exercise. To lock the server, press the `CTRL / control` + `C` key combination on the terminal page.
 

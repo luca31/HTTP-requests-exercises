@@ -1,19 +1,28 @@
 {
-  "name": "luca",
-  "version": "1.0.0",
-  "description": "",
+  "name": "http-requests-exercises",
+  "version": "1.5.0",
+  "description": "Turn your computer into a local server and use it for exercises on requests with the HTTP protocol.",
   "main": "index.js",
   "dependencies": {
     "body-parser": "^1.19.0",
-    "ejs": "^2.6.1",
-    "express": "^4.17.0",
-    "readline-sync": "^1.4.9"
+    "ejs": "^2.7.4",
+    "express": "^4.17.1",
+    "readline-sync": "^1.4.10"
   },
   "devDependencies": {},
   "scripts": {
+    "start": "npm install && node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "Luca Colli",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luca31/HTTP-requests-exercises.git"
+  },
+  "bugs": {
+    "url": "https://github.com/luca31/HTTP-requests-exercises/issues"
+  },
+  "homepage": "https://luca31.github.io/HTTP-requests-exercises"
 }
