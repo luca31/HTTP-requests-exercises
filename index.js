@@ -5,7 +5,7 @@ const app = express();
 
 const content = require('./content.js');
 
-let {ex, lang, progress} = content;
+let {ex, lang, progress, examples} = content;
 const port = process.env.PORT || 8080;
 
 app.use(bodyParser.json());
@@ -22,6 +22,11 @@ app.get('/', (req,res) => {
 
 app.get('/grade', (req,res) => {
   res.render("grade", {req:req, host:'http://'+req.headers.host, ex:ex, progress:progress});
+});
+
+
+app.get('/examples', (req,res) => {
+  res.render("examples", {req:req, host:'http://'+req.headers.host, examples:examples});
 });
 
 
