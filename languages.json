@@ -6,7 +6,7 @@
     "ok": "Good job!",
     "retry": "Retry",
     "reqSignup": "You have to sign up first!",
-    "listening": "The server is listening on port"
+    "listening": "  |\n  |  The server is listening on port %d.\n  |  Visit localhost:%d on your browser (link copied to clipboard).\n  |"
   },
   "Italiano": {
     "selection": "Il server si avvierà in italino.",
@@ -15,6 +15,6 @@
     "ok": "Ottimo lavoro!",
     "retry": "Riprova",
     "reqSignup": "Devi prima registrarti!",
-    "listening": "Il server è in ascolto sulla porta"
+    "listening": "  |\n  |  Il server è in ascolto sulla porta %d.\n  |  Visita localhost:%d sul tuo browser (link copiato).\n  |"
   }
 }

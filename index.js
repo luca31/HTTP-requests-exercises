@@ -77,4 +77,11 @@ app.all('*', (req, res) => {
 });
 
 
-app.listen(port, () => console.log(`${lang.listening} ${port}.`));
+app.listen(port, () => {
+  console.log("\x1b[36m" + lang.listening + "\x1b[0m", port, port);
+
+  // copy to clipboard
+  var proc = require('child_process').spawn('pbcopy'); 
+  proc.stdin.write("localhost:" + port);
+  proc.stdin.end();
+});
