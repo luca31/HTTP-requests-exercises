@@ -8,14 +8,14 @@ To host the api that allows you to perform the exercises you need to follow the 
  - Open the directory extracted from the zip using the terminal: `cd your/directory/path`
  - Write the command `npm start`
 
-Once you have completed all the steps, open the browser on page [http://127.0.0.1:8080](http://127.0.0.1:8080) or [http://localhost:8080](http://localhost:8080) for instructions. There is also an example python file containing the solution of the first exercise. To terminate the server, press the `CTRL / control` + `C` key combination on the terminal page.
+Once you have completed all the steps, open your browser at [http://localhost:8080](http://localhost:8080) and start verifying your abilities. In this page you can also find an example python file containing the solution of the first exercise.
 
 Note that once the hosting has been activated it will be necessary to open a new terminal page in case you want to execute further commands.
 
 
 ## Modifications of exercises and languages
 
-To add or remove other exercises, simply modify the list of exercises in the `ex.json` file. If you want to contribute to the improvement of translations, you can proceed with the modification of the `languages.json` file.
+To add or remove other exercises, simply modify the list of exercises in the `data/ex.json` file. If you want to contribute to the improvement of translations, you can proceed with the editing of the `data/languages.json` file and make a pull request.
 
 
 ## Updates - beta testing

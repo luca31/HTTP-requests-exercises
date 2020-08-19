@@ -1,4 +1,5 @@
 'use strict'
+
 const bodyParser = require('body-parser');
 const express = require('express');
 const app = express();
@@ -16,17 +17,17 @@ app.set('views', __dirname+`/views_${lang.abbr}`);
 
 
 app.get('/', (req,res) => {
-  res.render("index", {req:req, host:'http://'+req.headers.host, ex:ex});
+  res.render("index", {req, host:'http://'+req.headers.host, ex});
 });
 
 
 app.get('/grade', (req,res) => {
-  res.render("grade", {req:req, host:'http://'+req.headers.host, ex:ex, progress:progress});
+  res.render("grade", {req, host:'http://'+req.headers.host, ex, progress});
 });
 
 
 app.get('/examples', (req,res) => {
-  res.render("examples", {req:req, host:'http://'+req.headers.host, examples:examples});
+  res.render("examples", {req, host:'http://'+req.headers.host, examples});
 });
 
 

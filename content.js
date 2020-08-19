@@ -25,8 +25,8 @@ let progress = {
 };
 
 module.exports = {
-  ex: ex,
-  lang: lang,
-  progress: progress,
-  examples: examples
+  ex,
+  lang,
+  progress,
+  examples
 };
