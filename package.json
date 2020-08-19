@@ -1,6 +1,6 @@
 {
   "name": "http-requests-exercises",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "description": "Turn your computer into a local server and use it for exercises on requests with the HTTP protocol.",
   "main": "index.js",
   "dependencies": {
