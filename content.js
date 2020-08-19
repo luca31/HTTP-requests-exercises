@@ -1,7 +1,9 @@
 const readlineSync = require('readline-sync');
-var fs = require('fs');
+const fs = require('fs');
 
-const examples = { python: fs.readFileSync('./examples/example.py', 'utf8') }
+const formatter = require('./formatter.js');
+
+const examples = { python: formatter.python(fs.readFileSync('./examples/example.py', 'utf8')) }
 const languages = require('./data/languages.json');
 let ex = require('./data/ex.json');
 
