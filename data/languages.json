@@ -1,0 +1,20 @@
+{
+  "English": {
+    "selection": "The server will start in english.",
+    "abbr": "en",
+    "notFound": "Invalid request",
+    "ok": "Good job!",
+    "retry": "Retry",
+    "reqSignup": "You have to sign up first!",
+    "listening": "  |\n  |  The server is listening on port %d.\n  |  Visit localhost:%d on your browser (link copied to clipboard).\n  |\n  |  To exit from the process press CTRL/control + C.\n  |"
+  },
+  "Italiano": {
+    "selection": "Il server si avvierà in italino.",
+    "abbr": "it",
+    "notFound": "Richiesta non valida",
+    "ok": "Ottimo lavoro!",
+    "retry": "Riprova",
+    "reqSignup": "Devi prima registrarti!",
+    "listening": "  |\n  |  Il server è in ascolto sulla porta %d.\n  |  Visita localhost:%d sul tuo browser (link copiato).\n  |\n  |  Per terminare l'esecuzione premere CTRL/control + C.\n  |"
+  }
+}

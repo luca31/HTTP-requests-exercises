@@ -1,7 +1,11 @@
 const readlineSync = require('readline-sync');
+const fs = require('fs');
 
-const languages = require('./languages.json');
-let ex = require('./ex.json');
+const formatter = require('./formatter.js');
+
+const examples = { python: formatter.python(fs.readFileSync('./examples/example.py', 'utf8')) }
+const languages = require('./data/languages.json');
+let ex = require('./data/ex.json');
 
 const index = readlineSync.keyInSelect(Object.keys(languages), 'Which language?', {cancel:false});
 const lang = languages[Object.keys(languages)[index]];
@@ -21,7 +25,8 @@ let progress = {
 };
 
 module.exports = {
-  ex: ex,
-  lang: lang,
-  progress: progress
+  ex,
+  lang,
+  progress,
+  examples
 };

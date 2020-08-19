@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400');
 
-html, body, * {
+html, body, div, span, p, nav, header, h1, h2, h3, h4, h5, h6, a {
+  box-sizing:border-box;
   margin:0;
   padding:0;
   border:0;
@@ -8,6 +9,20 @@ html, body, * {
   vertical-align:baseline;
   font-size:100%;
   font-family:'Lato', sans-serif;
+}
+code {
+  display:block;
+  background-color:#eeeeee;
+  color:#000;
+  box-sizing:border-box;
+  margin:0;
+  padding:20px;
+  border:0;
+  outline:0;
+  vertical-align:baseline;
+  font-size:16px;
+  font-family:monospace;
+  border-radius:4px;
 }
 nav, div, header { 
   display:block;
